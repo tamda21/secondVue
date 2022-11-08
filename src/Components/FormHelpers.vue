@@ -35,5 +35,30 @@ export default {
 </script>
 
 <style>
-
+#form-links{
+  background-color: #eee;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+#form-links ul{
+  padding: 0;
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  margin-left: 8px
+}
+li:hover{
+  background-color: #333;
+  padding: 10px;
+}
+li:hover a{
+  color: #f00;
+  pointer-events: none;
+}
+li a{
+  text-decoration: none;
+  color: #333;
+}
 </style>
