@@ -1,8 +1,17 @@
 <template>
   <div>
   <form-helpers>
-    <h2 slot="title">{{title}}</h2>
-    <p slot="text">This is Paragraph Form</p>
+    <div slot='form-header'>
+      <h3>This Title of Form</h3>
+      <p>Information Of Form</p>
+    </div>
+    <div slot='form-feilds'>
+      <input type="text" placeholder="username" required>
+      <input type="password" placeholder="password" required>
+    </div>
+    <div slot='form-controls'>
+      <button v-on:click="handelClick">Submit</button>
+    </div>
   </form-helpers>
   </div>
     
@@ -16,7 +25,7 @@ export default {
   },
   data () {
     return {
-      title:"This is Title Form"
+      
     }
   }
 }
